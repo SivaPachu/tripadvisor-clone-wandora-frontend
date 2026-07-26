@@ -535,6 +535,7 @@ body {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content:space-between;
     gap: 25px;
     position: relative;
 }
@@ -562,10 +563,10 @@ body {
 }
 
 .adventure__card > div {
-    display: flex;
-    flex-direction: column;
-    flex:1 1 calc(25% - 25px);
-    min-width: 250px;
+    display:flex;
+    flex-direction:column;
+    flex:0 0 calc(25% - 19px);
+    box-sizing:border-box;
 }
 
 /* Outdoor Adventure Section */
@@ -582,6 +583,7 @@ body {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content:space-between;
     gap: 25px;
     position: relative;
 }
@@ -609,10 +611,10 @@ body {
 }
 
 .outdoor__card > div {
-    display: flex;
-    flex-direction: column;
-    flex:1 1 calc(25% - 25px);
-    min-width: 250px;
+    display:flex;
+    flex-direction:column;
+    flex:0 0 calc(25% - 19px);
+    box-sizing:border-box;
 }
 
 .interest__card>div,
@@ -1124,7 +1126,7 @@ body {
 
     .adventure__card > div,
     .outdoor__card > div{
-        flex:1 1 100%;
+        flex:0 0 100%;
     }
 
     .adventure__card img,
