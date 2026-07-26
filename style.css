@@ -544,9 +544,17 @@ body {
 }
 
 .adventure__card img {
-    width: 90%;
+    /* width: 90%;
     height: 76%;
     border-radius: 20px;
+    transition: transform 0.3s ease; */
+
+    
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
@@ -559,6 +567,12 @@ body {
     cursor: pointer;
 }
 
+.adventure__card > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 250px;
+    min-width: 250px;
+}
 
 /* Outdoor Adventure Section */
 .outdoor {
@@ -583,9 +597,16 @@ body {
 }
 
 .outdoor__card img {
-    width: 90%;
+    /* width: 90%;
     height: 76%;
     border-radius: 20px;
+    transition: transform 0.3s ease; */
+
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
@@ -598,10 +619,15 @@ body {
     cursor: pointer;
 }
 
+.outdoor__card > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 250px;
+    min-width: 250px;
+}
+
 .interest__card>div,
 .explore__card>div,
-.adventure__card>div,
-.outdoor__card>div,
 .iconic__card>div,
 .inspiration__banner__card>div {
     flex: 1 1 250px;
@@ -1085,6 +1111,26 @@ body {
 
     .promotion__banner::after {
         display: none;
+    }
+
+    .adventure,
+    .outdoor{
+        width:90%;
+    }
+
+    .adventure__card,
+    .outdoor__card{
+        gap:30px;
+    }
+
+    .adventure__card > div,
+    .outdoor__card > div{
+        flex:1 1 100%;
+    }
+
+    .adventure__card img,
+    .outdoor__card img{
+        height:220px;
     }
 
     .footer {
