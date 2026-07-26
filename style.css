@@ -1,0 +1,1112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+}
+
+
+/* Navigation Bar Section */
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    box-sizing: border-box;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .08);
+}
+
+.navbar__title {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__title i {
+    font-size: 30px;
+}
+
+.navbar__listings {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar__listings__discover,
+.navbar__listings__review,
+.navbar__listings__more {
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: black;
+}
+
+.navbar__listings__discover:hover,
+.navbar__listings__review:hover,
+.navbar__listings__more:hover {
+    border: none;
+    background: rgba(128, 128, 128, 0.9);
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.navbar__login {
+    border: none;
+    background: #9DBCD8;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar__login:hover {
+    border: none;
+    background: black;
+    color: white;
+    transition: 0.2s;
+    padding: 15px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar i.navbar__menu {
+    display: none !important;
+}
+
+/* Logo Animation */
+.navbar__logo__icon {
+    font-size: 30px;
+    transition: transform 0.5s ease;
+}
+
+.navbar__logo__icon:hover {
+    animation: binocularScan 0.8s ease;
+}
+
+@keyframes binocularScan {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-15deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* Search bar Section */
+.search {
+    margin-top: 40px;
+    max-width: 800px;
+    margin: 40px auto 0;
+}
+
+.search__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 50px;
+    gap: 30px;
+}
+
+.search__cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.search__cards p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.search__cards p:hover,
+.search__cards__all {
+    border-bottom: 2px solid black;
+}
+
+.search__input {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.search__input__contents {
+    display: flex;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 30px;
+    padding: 8px 12px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.search__input__contents i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.search__input__contents input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.search__input__contents button {
+    border: none;
+    background: #9DBCD8;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search__input__contents button:hover {
+    border: none;
+    background: black;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.2s;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search__filters {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    flex: 1 1 220px;
+    max-width: 250px;
+    min-width: 180px;
+}
+
+.filter label {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(52, 41, 91);
+}
+
+.filter select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #9DBCD8;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter select:hover,
+.filter select:focus {
+    border-color: rgb(52, 41, 91);
+}
+
+
+
+/* Promotion Section */
+.promotion {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.promotion__banner {
+    width: 80%;
+    height: 500px;
+    background-color: #9DBCD8;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.promotion__banner__image {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.promotion__banner__content {
+    width: 50%;
+    position: static;
+}
+
+.promotion__banner__content h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.promotion__banner__content p {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.promotion__banner__content button {
+    display: block;
+    margin: 20px auto 0;
+    border: none;
+    background: black;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.promotion__banner::after {
+    content: "";
+    position: absolute;
+    left: 51%;
+    top: 30px;
+    bottom: 30px;
+    width: 2px;
+    background-color: black;
+    transform: translateX(-50%);
+}
+
+/* Interested Section */
+.interest {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.interest__tag {
+    margin-top: 5px;
+}
+
+.interest__card {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.interest__card__item {
+    flex: 1 1 calc(25% - 25px);
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.interest__card__item img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.interest__card__item h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    color: white;
+    font-size: 32px;
+    z-index: 2;
+}
+
+.interest__card__item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Explore Section */
+.explore {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.explore__tag {
+    margin-top: 5px;
+}
+
+.explore__card {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: relative;
+}
+
+.explore__card img {
+    width: 95%;
+    height: 70%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.explore__card p {
+    margin-top: 2px;
+}
+
+.explore__card .rating {
+    color: grey;
+}
+
+.explore__card img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+/* Donation Section */
+.donation {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.donation__banner {
+    width: 80%;
+    height: 600px;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.donation__banner__image {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.donation__banner__content {
+    width: 45%;
+    padding-right: 20px;
+    position: static;
+}
+
+.donation__banner__content h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.donation__banner__content p {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.donation__banner__content button {
+    display: block;
+    margin: 20px auto 0;
+    border: none;
+    background: black;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.donation__banner__content__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+/* Inspiration Section */
+.inspiration {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.inspiration__banner__content__tag {
+    margin-top: 5px;
+}
+
+.inspiration__banner {
+    width: 100%;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    padding: 30px 0;
+}
+
+.inspiration__banner__content {
+    width: 80%;
+    margin: auto;
+}
+
+.inspiration__banner__card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.inspiration__banner__card>div {
+    flex: 1 1 calc(25% - 25px);
+    min-width: 250px;
+}
+
+.inspiration__banner__card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.inspiration__banner__card img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.inspiration__banner__card h3 {
+    margin-top: 5px;
+}
+
+/* Aerial Adventure Section */
+.adventure {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.adventure__tag {
+    margin-top: 5px;
+}
+
+.adventure__card {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: relative;
+}
+
+.adventure__card p {
+    margin-top: 2px;
+}
+
+.adventure__card img {
+    width: 90%;
+    height: 78%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.adventure__card .rating {
+    color: grey;
+}
+
+.adventure__card img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+/* Outdoor Adventure Section */
+.outdoor {
+    width: 80%;
+    margin: 70px auto;
+}
+
+.outdoor__tag {
+    margin-top: 5px;
+}
+
+.outdoor__card {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: relative;
+}
+
+.outdoor__card p {
+    margin-top: 2px;
+}
+
+.outdoor__card img {
+    width: 90%;
+    height: 80%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.outdoor__card .rating {
+    color: grey;
+}
+
+.outdoor__card img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.interest__card>div,
+.explore__card>div,
+.adventure__card>div,
+.outdoor__card>div,
+.iconic__card>div,
+.inspiration__banner__card>div {
+    flex: 1 1 250px;
+}
+
+
+/* Iconic Places Section */
+.iconic {
+    width: 80%;
+    margin: 70px auto;
+}
+
+.iconic__tag {
+    margin-top: 5px;
+}
+
+.iconic__card {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.iconic__card__item {
+    flex: 1 1 calc(25% - 25px);
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.iconic__card__item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    transition: transform .3s ease;
+}
+
+.iconic__card__item h3 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    margin: 0;
+    color: white;
+    font-size: 28px;
+    z-index: 2;
+}
+
+.iconic__card__item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Award Section */
+.award {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.award__banner {
+    width: 80%;
+    height: 760px;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.award__banner__image {
+    width: 45%;
+    height: 90%;
+    display: flex;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.award__banner__content {
+    width: 45%;
+    padding-left: 30px;
+    position: static;
+}
+
+.award__banner__content h1,
+.award__banner__content h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.award__banner__content p {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.award__banner__content button {
+    display: block;
+    margin: 20px auto 0;
+    border: none;
+    background: #FED591;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.award__banner__content__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+/* Footer Section */
+.footer {
+    margin-top: 70px;
+    background-color: #F7F7F7;
+    padding: 50px 0;
+}
+
+.footer__container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer__container__content {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.footer__container__content h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.footer__container__content p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.footer__container__content p:hover {
+    border-bottom: 1px solid black;
+    width: fit-content;
+}
+
+.footer__container__follow {
+    text-align: left;
+}
+
+.footer__container__follow h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.footer__container__follow i {
+    font-size: 28px;
+    margin-right: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.footer__container__follow i:hover {
+    transform: scale(1.2);
+}
+
+
+/* Footer - Copyrights Section */
+.copyrights {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.copyrights__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.copyrights__logo p {
+    font-size: 12px;
+}
+
+.copyrights__terms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.copyrights__terms p {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+
+/* Chat with AI Section */
+.ai-chat {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background: #9DBCD8;
+    color: #000;
+    padding: 12px 18px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+    z-index: 99999;
+    transition: .3s;
+}
+
+.ai-chat:hover {
+    transform: translateY(-5px);
+    background: #000;
+    color: #fff;
+}
+
+.ai-chat i {
+    font-size: 22px;
+}
+
+.ai-chat span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+/* Media Queries for Laptop & Desktop */
+@media screen and (max-width:1200px) {
+
+    .interest,
+    .explore,
+    .adventure,
+    .outdoor,
+    .iconic,
+    .search,
+    .copyrights {
+        width: 90%;
+    }
+
+    .promotion__banner,
+    .award__banner,
+    .donation__banner {
+
+        flex-direction: column;
+
+        height: auto;
+
+        padding: 30px;
+    }
+
+    .promotion__banner__image,
+    .award__banner__image,
+    .donation__banner__image {
+
+        width: 100%;
+        height: auto;
+    }
+
+    .promotion__banner__content,
+    .award__banner__content,
+    .donation__banner__content {
+
+        width: 100%;
+        position: static;
+    }
+}
+
+
+/* Media Queries for Tablet */
+@media screen and (max-width:768px) {
+
+    .navbar {
+
+        padding: 15px 5%;
+    }
+
+    .search__title {
+
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .search__cards {
+
+        gap: 15px;
+    }
+
+    .search__filters {
+        gap: 15px;
+    }
+
+    .filter {
+        flex: 1 1 250px;
+    }
+
+    .promotion__banner::after {
+        display: none;
+    }
+
+
+    .footer__container {
+
+        flex-direction: column;
+    }
+
+    .footer__container__content {
+
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .award__banner__content h1,
+    .promotion__banner__content h1 {
+
+        font-size: 36px;
+    }
+
+    .interest__card>div,
+    .explore__card>div,
+    .adventure__card>div,
+    .outdoor__card>div,
+    .iconic__card>div {
+
+        flex: 1 1 100%;
+    }
+
+    .ai-chat {
+
+        right: 20px;
+        bottom: 20px;
+        padding: 10px 16px;
+
+    }
+}
+
+
+/* Media Queries for Mobile */
+@media screen and (max-width:600px) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .navbar__listings {
+        display: none;
+    }
+
+    .navbar i.navbar__menu {
+        display: block !important;
+    }
+
+    .navbar__menu {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .navbar__logo h2 {
+        font-size: 22px;
+    }
+
+    .search {
+        display: block;
+        margin-top: 25px;
+        justify-content: center;
+        gap: 20px 40px;
+        margin-top: 30px;
+    }
+
+    .search__title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .search__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .search__cards p {
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .search__input {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .search__input__contents {
+        width: 100%;
+        max-width: 100%;
+        padding: 8px 12px;
+    }
+
+    .search__input__contents input {
+        font-size: 14px;
+    }
+
+    .search__input__contents button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .search__filters {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .filter {
+        flex: 1 1 45%;
+        min-width: 140px;
+        max-width: 170px;
+    }
+
+    .filter label {
+        font-size: 15px;
+    }
+
+    .filter select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .promotion__banner,
+    .award__banner,
+    .donation__banner {
+
+        padding: 20px;
+    }
+
+    .promotion__banner__content h1,
+    .award__banner__content h1 {
+
+        font-size: 28px;
+    }
+
+    .promotion__banner__content p,
+    .award__banner__content p {
+
+        font-size: 16px;
+    }
+
+    .promotion__banner::after {
+        display: none;
+    }
+
+    .footer {
+        text-align: left;
+    }
+
+    .footer__container__follow {
+        width: 100%;
+    }
+
+    .ai-chat {
+        right: 15px;
+        bottom: 15px;
+        padding: 12px;
+        border-radius: 50%;
+    }
+
+    .ai-chat p {
+        display: none;
+    }
+
+    .ai-chat i {
+        font-size: 22px;
+    }
+}

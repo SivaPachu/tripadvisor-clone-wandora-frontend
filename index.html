@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Webpage Title & Logo -->
+    <title>Wandora : Explore. Experience. Remember.</title>
+    <link rel="icon" type="image/png" href="images/logo/wandora_logo.png">
+
+    <!-- Style sheet Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Style Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navigation Bar Section -->
+    <div class="navbar">
+        <div class="navbar__title">
+            <i class="fa-solid fa-binoculars navbar__logo__icon" style="color: rgb(52, 41, 91);"></i>
+            <h1 class="navbar__name">Wandora</h1>
+        </div>
+
+        <div class="navbar__listings">
+            <p class="navbar__listings__discover">Discover</p>
+            <p class="navbar__listings__review">Review</p>
+            <p class="navbar__listings__more">More</p>
+            <button class="navbar__login">Sign In</button>
+        </div>
+
+        <i class="fa-solid fa-bars navbar__menu"></i>
+    </div>
+
+
+    <!-- Search Section -->
+    <div class="search">
+        <h1 class="search__title">Find Your Next Adventure</h1>
+
+        <div class="search__cards">
+            <p class="search__cards__all"><i class="fa-regular fa-house" style="color: rgb(52, 41, 91);"></i> Search All
+            </p>
+
+            <p class="search__cards__todo"><i class="fa-regular fa-camera" style="color: rgb(52, 41, 91);"></i> Things
+                to Do</p>
+
+            <p class="search__cards__hotel"><i class="fa-solid fa-bed" style="color: rgb(52, 41, 91);"></i> Hotels</p>
+
+            <p class="search__cards__restaurant"><i class="fa-solid fa-utensils" style="color: rgb(52, 41, 91);"></i>
+                Restaurant</p>
+        </div>
+
+        <div class="search__input">
+            <div class="search__input__contents">
+                <i class="fa-solid fa-magnifying-glass" style="color: rgb(52, 41, 91);"></i>
+                <input type="text" placeholder="Search for a location">
+                <button>Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="search__filters">
+
+        <div class="filter">
+            <label for="rating"><i class="fa-solid fa-ranking-star" style="color: rgb(52, 41, 91);"></i> Rating</label>
+            <select id="rating">
+                <option value="">All Ratings</option>
+                <option>5 ⭐⭐⭐⭐⭐</option>
+                <option>4 ⭐⭐⭐⭐ & Above</option>
+                <option>3 ⭐⭐⭐ & Above</option>
+                <option>2 ⭐⭐ & Above</option>
+            </select>
+        </div>
+
+        <div class="filter">
+            <label for="price"><i class="fa-solid fa-filter-circle-dollar" style="color: rgb(52, 41, 91);"></i> Price Range</label>
+            <select id="price">
+                <option value="">Any Price</option>
+                <option>₹0 - ₹12,999</option>
+                <option>₹13,000 - ₹22,999</option>
+                <option>₹23,000 - ₹39,999</option>
+                <option>₹40,000+</option>
+            </select>
+        </div>
+    </div>
+
+
+    <!-- Promotion Section -->
+    <div class="promotion">
+        <div class="promotion__banner">
+            <img class="promotion__banner__image" src="images/promotion/promotion.jpg" alt="Promotion Banner">
+
+            <div class="promotion__banner__content">
+                <h1>Find Things to do for everything you're into</h1>
+                <p>Browse 600,000+ experiences and book with us</p>
+                <button>Book now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Interested Section -->
+    <div class="interest">
+        <h2>Find Things to do by interest</h2>
+        <p class="interest__tag">Whatever you're into, we've got it</p>
+
+        <div class="interest__card">
+            <div class="interest__card__item">
+                <img src="images/interest/outdoor.jpg" alt="Outdoor Adventures">
+                <h3>Outdoors</h3>
+            </div>
+
+            <div class="interest__card__item">
+                <img src="images/interest/food.jpg" alt="Food Experiences">
+                <h3>Food</h3>
+            </div>
+
+            <div class="interest__card__item">
+                <img src="images/interest/water.jpg" alt="Water Activities">
+                <h3>Water</h3>
+            </div>
+
+            <div class="interest__card__item">
+                <img src="images/interest/culture.jpg" alt="Culture">
+                <h3>Culture</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Explore Section -->
+    <div class="explore">
+        <h2>Explore experiences</h2>
+        <p class="explore__tag">Can't-miss picks near you</p>
+
+        <div class="explore__card">
+            <div class="explore__card__outdoor">
+                <img src="images/explore/scuba_diving.jpg" alt="Catamaran & Scuba Diving Tour">
+                <h3>Catamaran & Scuba Diving Tour</h3>
+                <p class="location">Cano Island, Costa Rica</p>
+                <p class="rating"> 4.8 ⭐⭐⭐⭐⭐ (1,240)</p>
+                <p class="details">2 hours • Free Cancellation</p>
+                <p class="price">From ₹16,000 per person</p>
+            </div>
+
+            <div class="explore__card__food">
+                <img src="images/explore/street_food.jpg" alt="Tuk-Tuk Street Food Adventure">
+                <h3>Midnight Street Food Adventure</h3>
+                <p class="location">Bangkok, Thailand</p>
+                <p class="rating"> 4.2 ⭐⭐⭐⭐✩ (3,890)</p>
+                <p class="details">4 hours • Small Group</p>
+                <p class="price">From ₹6,800 per person</p>
+            </div>
+
+            <div class="explore__card__water">
+                <img src="images/explore/cruise_sunset.jpg" alt="Luxury Sunset Cruise">
+                <h3>Luxury Sunset Catamaran Cruise</h3>
+                <p class="location">Santorini, Greece</p>
+                <p class="rating">3.9 ⭐⭐⭐⭐✩ (850)</p>
+                <p class="details">5 hours • Hotel Transfer Included</p>
+                <p class="price">From ₹12,000 per person</p>
+            </div>
+
+            <div class="explore__card__culture">
+                <img src="images/explore/desert_safari.jpg" alt="Desert Safari and Dinner">
+                <h3>Desert Safari & Cultural Dinner</h3>
+                <p class="location">Dubai, UAE</p>
+                <p class="rating">4.6 ⭐⭐⭐⭐⭐ (5,110 reviews)</p>
+                <p class="details">6 hours • Free Cancellation</p>
+                <p class="price">From ₹8,500 per person</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Donation Section -->
+    <div class="donation">
+        <div class="donation__banner">
+            <img class="donation__banner__image" src="images/donation/donation.jpg" alt="Donation Banner">
+
+            <div class="donation__banner__content">
+                <div class="donation__banner__content__logo">
+                    <i class="fa-solid fa-binoculars" style="color: rgb(52, 41, 91);"></i>
+                    <h3>Wandora</h3>
+                </div>
+
+                <h1>Keep Local Experiences Alive</h1>
+                <p>Support Independent Tour Guides & Heritage Communities. 100% of your voluntary
+                    contribution directly funds local artisans, wildlife
+                    conservation efforts, and family-run tour operations around the world.</p>
+                <button>Donate now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Inspiration Section -->
+    <div class="inspiration">
+        <div class="inspiration__banner">
+            <div class="inspiration__banner__content">
+                <h1>Get Inspired for Your Next Adventure</h1>
+                <p class="inspiration__banner__content__tag">Discover new destinations, experiences, and travel tips to
+                    fuel your wanderlust.</p>
+
+                <div class="inspiration__banner__card">
+                    <div class="inspiration__banner__card__outdoor">
+                        <img src="images/inspire/bucket_list.jpg" alt="Bucket List Destinations">
+                        <h3>Bucket List Destinations</h3>
+                    </div>
+
+                    <div class="inspiration__banner__card__food">
+                        <img src="images/inspire/seasonal_escapes.jpg" alt="Seasonal Escapes">
+                        <h3>Seasonal Escapes</h3>
+                    </div>
+
+                    <div class="inspiration__banner__card__water">
+                        <img src="images/inspire/solo_trip.jpg" alt="Solo Travel Ideas">
+                        <h3>Solo Travel Ideas</h3>
+                    </div>
+
+                    <div class="inspiration__banner__card__culture">
+                        <img src="images/inspire/luxury_stays.jpg" alt="Luxury & Wellness Stays">
+                        <h3>Luxury & Wellness Stays</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Aerial Adventure Section -->
+    <div class="adventure">
+        <h2>Above the Horizon</h2>
+        <p class="adventure__tag">Experience the thrill of adventure from a whole new perspective.</p>
+
+        <div class="adventure__card">
+            <div class="adventure__card__outdoor">
+                <img src="images/adventure/air_baloon.jpg" alt="Sunrise Hot Air Balloon Flight">
+                <h3>Sunrise Hot Air Balloon Flight</h3>
+                <p class="rating">4.9 ⭐⭐⭐⭐⭐ (2,150)</p>
+                <p class="details">3 hours • Champagne Breakfast Included</p>
+                <p class="price">From ₹22,500 per person</p>
+            </div>
+
+            <div class="adventure__card__food">
+                <img src="images/adventure/tandem_skydiving.jpg" alt="Tandem Skydiving Experience">
+                <h3>15,000ft Tandem Skydiving</h3>
+                <p class="rating">4.8 ⭐⭐⭐⭐⭐ (4,620)</p>
+                <p class="details">4 hours • HD Video Package Included</p>
+                <p class="price">From ₹28,000 per person</p>
+            </div>
+
+            <div class="adventure__card__water">
+                <img src="images/adventure/para_gliding.jpg" alt="Tandem Paragliding Flight">
+                <h3>Tandem Paragliding Adventure</h3>
+                <p class="rating">4.7 ⭐⭐⭐⭐⭐ (1,890)</p>
+                <p class="details">2 hours • Free Cancellation</p>
+                <p class="price">From ₹7,500 per person</p>
+            </div>
+
+            <div class="adventure__card__culture">
+                <img src="images/adventure/skyline_helicopter.jpg" alt="Scenic Helicopter Tour">
+                <h3>Scenic Skyline Helicopter Tour</h3>
+                <p class="rating">4.6 ⭐⭐⭐⭐✩ (980)</p>
+                <p class="details">45 mins • Small Group</p>
+                <p class="price">From ₹18,900 per person</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Outdoor Adventure Section -->
+    <div class="outdoor">
+        <h2>Trail & Trek</h2>
+        <p class="outdoor__tag">From scenic hikes to rugged trails, every path tells a story.</p>
+
+        <div class="outdoor__card">
+            <div class="outdoor__card__outdoor">
+                <img src="images/outdoor/summit_trek.jpg" alt="Himalayan Mountain Trekking">
+                <h3>Himalayan Ridge Summit Trek</h3>
+                <p class="rating">4.9 ⭐⭐⭐⭐⭐ (3,420)</p>
+                <p class="details">2 Days • Camping & Gear Included</p>
+                <p class="price">From ₹9,500 per person</p>
+            </div>
+
+            <div class="outdoor__card__food">
+                <img src="images/outdoor/water_rafting.jpg" alt="White Water River Rafting">
+                <h3>White Water Rafting & Cliff Jump</h3>
+                <p class="rating">4.8 ⭐⭐⭐⭐⭐ (5,110)</p>
+                <p class="details">3 hours • Safety Equipment Included</p>
+                <p class="price">From ₹3,200 per person</p>
+            </div>
+
+            <div class="outdoor__card__water">
+                <img src="images/outdoor/wildlife_safari.jpg" alt="Wildlife Jungle Safari">
+                <h3>Wilderness Wildlife Safari</h3>
+                <p class="rating">4.7 ⭐⭐⭐⭐⭐ (2,840)</p>
+                <p class="details">5 hours • Expert Naturalist Guide</p>
+                <p class="price">From ₹6,800 per person</p>
+            </div>
+
+            <div class="outdoor__card__culture">
+                <img src="images/outdoor/rock_climbing.jpg" alt="Rock Climbing and Rappelling">
+                <h3>Rock Climbing & Rappelling Tour</h3>
+                <p class="rating">4.6 ⭐⭐⭐⭐✩ (1,150)</p>
+                <p class="details">4 hours • Small Group</p>
+                <p class="price">From ₹4,500 per person</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Iconic Places Section -->
+    <div class="iconic">
+        <h2>Explore Iconic Places</h2>
+        <p class="iconic__tag">Discover the world's most famous destinations</p>
+
+        <div class="iconic__card">
+
+            <div class="iconic__card__item">
+                <img src="images/iconi_places/eiffel_tower.jpg" alt="Eiffel Tower">
+                <h3>Eiffel Tower, France</h3>
+            </div>
+
+            <div class="iconic__card__item">
+                <img src="images/iconi_places/colosseum.jpg" alt="Colosseum">
+                <h3>Colosseum, Italy</h3>
+            </div>
+
+            <div class="iconic__card__item">
+                <img src="images/iconi_places/taj_mahal.jpg" alt="Taj Mahal">
+                <h3>Taj Mahal, India</h3>
+            </div>
+
+            <div class="iconic__card__item">
+                <img src="images/iconi_places/statueof_liberty.jpg" alt="Statue of Liberty">
+                <h3>Statue of Liberty, USA</h3>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Award Section -->
+    <div class="award">
+        <div class="award__banner">
+
+            <div class="award__banner__content">
+                <div class="award__banner__content__logo">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h3>Award</h3>
+                </div>
+                <h1>2026 Travellers' Choice Award</h1>
+                <p>
+                    Celebrating the world's most loved travel destinations,
+                    unforgettable experiences, and outstanding hospitality.
+                    Discover the winners chosen by millions of travellers.
+                </p>
+                <button>Explore Winners</button>
+            </div>
+
+            <img class="award__banner__image" src="images/award/award.jpg" alt="Travellers Award">
+
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer__container">
+            <div class="footer__container__content">
+                <div class="footer__container__content__one">
+                    <h3>About Tripadvisor</h3>
+                    <p>About Us</p>
+                    <p>Press</p>
+                    <p>Resources and Policies</p>
+                    <p>Careers</p>
+                    <p>Trust & Safety</p>
+                    <p>Contact us</p>
+                    <p>Wandora Blog</p>
+                </div>
+
+                <div class="footer__container__content__two">
+                    <h3>Write a Review</h3>
+                    <p>Add a Place</p>
+                    <p>Join</p>
+                    <p>Traveller's Choice</p>
+                    <p>Help Center</p>
+                    <p>Travel Stories</p>
+                </div>
+
+                <div class="footer__container__content__three">
+                    <h3>Do Business With Us</h3>
+                    <p>Business Advantage</p>
+                    <p>Sponsored Placements</p>
+                    <p>Advertise with Us</p>
+
+                    <h3>Get the App</h3>
+                    <p>Iphone App</p>
+                    <p>Android App</p>
+                    <p>Advertise with Us</p>
+                </div>
+            </div>
+
+            <div class="footer__container__follow">
+                <h3>Follow Us</h3>
+                <i class="fa-brands fa-facebook" style="color: rgb(52, 41, 91);"></i>
+                <i class="fa-brands fa-x-twitter" style="color: rgb(52, 41, 91);"></i>
+                <i class="fa-brands fa-instagram" style="color: rgb(52, 41, 91);"></i>
+                <i class="fa-brands fa-youtube" style="color: rgb(52, 41, 91);"></i>
+                <i class="fa-brands fa-pinterest" style="color: rgb(52, 41, 91);"></i>
+            </div>
+        </div>
+
+
+        <!-- Footer - Copyrights Section -->
+        <div class="copyrights">
+            <div class="copyrights__logo">
+                <i class="fa-solid fa-binoculars" style="color: rgb(52, 41, 91);"></i>
+                <p>&copy; 2026 Wandora LLC All rights reserved.</p>
+            </div>
+
+            <div class="copyrights__terms">
+                <p>Terms of Use</p>
+                <p>Privacy and Cookies Statement</p>
+                <p>Cookie consent</p>
+                <p>How the Site Works</p>
+                <p>Contact Us</p>
+                <p>Accessibility Statement</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Chat with AI Section -->
+    <div class="ai-chat">
+        <i class="fa-solid fa-robot"></i>
+        <p>Ask AI</p>
+    </div>
+
+</body>
+
+</html>
