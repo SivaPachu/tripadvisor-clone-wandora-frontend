@@ -29,11 +29,11 @@ The project focuses on building a modern, visually appealing, and fully responsi
 
 ## 🚀 Live Demo
 
-
+https://sivapachu.github.io/tripadvisor-clone-wandora-frontend/
 
 ## 💻 GitHub Repository
 
-
+https://github.com/SivaPachu/tripadvisor-clone-wandora-frontend.git
 
 ## 🎯 Future Improvements
 
