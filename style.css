@@ -545,7 +545,7 @@ body {
 
 .adventure__card img {
     width: 90%;
-    height: 78%;
+    height: 76%;
     border-radius: 20px;
     transition: transform 0.3s ease;
 }
@@ -584,7 +584,7 @@ body {
 
 .outdoor__card img {
     width: 90%;
-    height: 80%;
+    height: 76%;
     border-radius: 20px;
     transition: transform 0.3s ease;
 }
